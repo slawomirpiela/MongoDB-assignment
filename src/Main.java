@@ -100,12 +100,13 @@ public class Main {
 				sb.append("db.CharacterDeaths.insert({"
 						+ "_id:\""+c.getName() + 
 						"\",allegiance:\"" + c.getAllegiance() + 
-						"\",death_facts:[{"
+						"\",book_intro:" + c.getBook_intro() +
+						",death_facts:[{"
 							+"death_year:" + c.getDeath_year() +
 							",book_of_death:" + c.getBook_of_death() + 
 							",death_chapter:" + c.getDeath_chapter() + 
 							"}]"
-							+ ",gender:" + c.getGender() + 
+						+ ",gender:" + c.getGender() + 
 						",nobility:" + c.getNobility() +
 						",books:[{"
 							+ "got:" + c.getGot() + 
